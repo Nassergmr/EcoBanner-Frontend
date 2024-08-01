@@ -1,0 +1,232 @@
+{
+  "data": [
+    {
+      "id": 10,
+      "attributes": {
+        "title": "Divorce Lawyer Service",
+        "createdAt": "2024-07-19T17:46:04.186Z",
+        "updatedAt": "2024-07-19T17:46:28.609Z",
+        "publishedAt": "2024-07-19T17:46:27.945Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A simple yet effective banner design for a divorce lawyer service. The design features a couple and a briefcase, highlighting the professional legal support offered by the service.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 54.8,
+        "category": "Marketing"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "E-Commerce Concept",
+        "createdAt": "2024-07-19T17:36:42.426Z",
+        "updatedAt": "2024-07-19T17:36:50.880Z",
+        "publishedAt": "2024-07-19T17:36:50.419Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A colorful and modern website banner design showcasing the concept of e-commerce. The design features various abstract shapes and icons related to online shopping, creating a visually engaging and eye-catching appeal.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 50,
+        "category": "E-commerce"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "Brand New Tech",
+        "createdAt": "2024-07-19T17:38:20.621Z",
+        "updatedAt": "2024-07-19T17:39:29.263Z",
+        "publishedAt": "2024-07-19T17:39:28.862Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A clean and minimalist banner design promoting a brand's new technology. The design features a stylish headphone icon and modern typography, conveying a sense of innovation and advancement.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 45,
+        "category": "E-commerce"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "title": "Pure Honey",
+        "createdAt": "2024-07-19T17:40:44.467Z",
+        "updatedAt": "2024-07-19T17:40:52.274Z",
+        "publishedAt": "2024-07-19T17:40:51.760Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A visually appealing banner design for a honey product. The design features a glass of honey and a beehive, creating a natural and sweet aesthetic. The soft color palette adds to the overall appeal of the banner.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 40.5,
+        "category": "E-commerce"
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "title": "Cyber Security",
+        "createdAt": "2024-07-19T17:41:59.143Z",
+        "updatedAt": "2024-07-19T17:42:06.685Z",
+        "publishedAt": "2024-07-19T17:42:06.289Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A dynamic and eye-catching banner design focusing on cyber security. The design features a lock icon and abstract shapes, representing the importance of protecting sensitive data and systems.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 55.9,
+        "category": "Security"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "title": "Security Technology",
+        "createdAt": "2024-07-19T17:43:06.349Z",
+        "updatedAt": "2024-07-19T17:43:15.471Z",
+        "publishedAt": "2024-07-19T17:43:15.060Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A sophisticated website banner design highlighting the use of advanced security technology. The design features a computer screen and abstract shapes, illustrating the role of technology in safeguarding information.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 50.99,
+        "category": "Security"
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "title": "Internet Security",
+        "createdAt": "2024-07-19T17:44:04.103Z",
+        "updatedAt": "2024-07-19T17:44:12.536Z",
+        "publishedAt": "2024-07-19T17:44:12.145Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A professional and clear banner design emphasizing the importance of internet security. The design features a lock icon, a computer screen, and gear symbols, indicating the use of advanced security measures.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 45,
+        "category": "Security"
+      }
+    },
+    {
+      "id": 9,
+      "attributes": {
+        "title": "Digital Marketing Ideas",
+        "createdAt": "2024-07-19T17:45:09.351Z",
+        "updatedAt": "2024-07-19T17:45:18.357Z",
+        "publishedAt": "2024-07-19T17:45:17.787Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A creative and engaging website banner promoting digital marketing ideas. The design features two characters interacting with a computer screen, representing the use of digital strategies to reach target audiences.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 30.49,
+        "category": "Marketing"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "title": "Boost The Productivity",
+        "createdAt": "2024-07-19T17:39:13.233Z",
+        "updatedAt": "2024-07-19T22:38:07.752Z",
+        "publishedAt": "2024-07-19T17:39:43.367Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A professional and modern website banner designed to encourage users to enhance their productivity. The design features a laptop and a podium, symbolizing a sophisticated work environment and achieving higher levels of efficiency.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 60.99,
+        "category": "E-commerce"
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "title": "Creative Marketing",
+        "createdAt": "2024-07-19T17:47:27.919Z",
+        "updatedAt": "2024-07-19T22:38:57.800Z",
+        "publishedAt": "2024-07-19T17:47:38.634Z",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "A modern and minimalist website banner showcasing digital marketing ideas. The design features a computer screen, two characters, and abstract shapes, representing the creative and strategic aspects of digital marketing.",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "price": 60.99,
+        "category": "Marketing"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 10
+    }
+  }
+}
