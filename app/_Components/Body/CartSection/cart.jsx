@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Cart_Context from "../../_Context/cart_context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { BiCategory } from "react-icons/bi";
 import cartApi from "../../../_utils/cartApi";
 import Link from "next/link";
@@ -41,15 +41,21 @@ export default function Cart_Details() {
           </header>
 
           <div className="mt-8">
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               {cart.map((item) => {
                 const img_url =
                   item?.product?.attributes?.banner?.data[0]?.attributes?.url;
 
                 return (
-                  <li className="flex items-center gap-4" key={item.id}>
+                  <li
+                    className="flex sm:flex-row flex-col  items-center gap-4"
+                    key={item.id}
+                  >
                     {/* Added key prop */}
-                    <div id="img_container" className="w-[50%] sm:w-auto">
+                    <div
+                      id="img_container"
+                      className=" sm:w-auto mx-auto sm:mx-0"
+                    >
                       <Image src={img_url} width={300} height={300} alt="img" />
                     </div>
                     <div>

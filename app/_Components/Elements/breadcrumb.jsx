@@ -36,7 +36,7 @@ export default function Breadcrumb({ product_data }) {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="m1 9 4-4-4-4"

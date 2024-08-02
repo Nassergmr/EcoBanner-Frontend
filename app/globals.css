@@ -27,6 +27,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #f7fafc;
   position: relative;
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
