@@ -50,7 +50,7 @@ export default function Navebar() {
   }
 
   return (
-    <nav className="flex justify-between lg:px-16 md:px-8 sm:px-6 px-5 py-5 items-center bg-white shadow-md fixed w-full top-0">
+    <nav className="flex justify-between lg:px-16 md:px-8 sm:px-6 px-5 py-5 items-center bg-white shadow-md fixed w-full max-w-[100vw] top-0">
       <ul className="flex sm:gap-x-5 items-center">
         <Link href="/" id="logo" className="mr-5">
           <Image src="/logo.svg" width={70} height={70} alt="logo" />

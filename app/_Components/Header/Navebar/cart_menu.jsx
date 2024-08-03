@@ -43,7 +43,7 @@ export default function Cart_Menu({ cart_Menu, setCart_Menu }) {
       <div
         ref={cart_MenuRef}
         id="cart_menu"
-        className={`fixed top-[0] overflow-y-scroll h-screen  w-full sm:w-[50%] lg:w-[35%] bg-white shadow-lg transition-all duration-300 ease-in-out z-30 ${
+        className={`fixed top-[0] overflow-y-scroll h-screen max-w-[100vw]  w-full sm:w-[50%] lg:w-[35%] bg-white shadow-lg transition-all duration-300 ease-in-out z-30 ${
           cart_Menu ? "left-0" : "-left-full"
         }`}
       >

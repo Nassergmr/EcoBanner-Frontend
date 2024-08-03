@@ -7,6 +7,10 @@ import { useState, useEffect, useRef } from "react";
 import Button_main_drawer from "../../Elements/button_main_drawer";
 import Button_secondary_drawer from "../../Elements/button_secondary_drawer";
 import { useUser } from "@clerk/nextjs";
+import { GrMenu } from "react-icons/gr";
+import { IoMdClose } from "react-icons/io";
+
+
 
 export default function Drawer() {
   const { user } = useUser();
@@ -40,14 +44,11 @@ export default function Drawer() {
   return (
     <>
       {/* Menu toggle button */}
-      <Image
+      <GrMenu
         onClick={toggleDrawer}
         id="menu"
-        src="/images/menu.svg"
-        width={30}
-        height={30}
         alt="menu"
-        className="sm:hidden block cursor-pointer hover:opacity-100 opacity-70 transition duration-75 ease-in"
+        className="sm:hidden block cursor-pointer text-[23px] transition duration-75 ease-in"
       />
 
       {/* Dark overlay */}
@@ -61,18 +62,15 @@ export default function Drawer() {
       {/* Drawer content */}
       <div
         ref={drawerRef}
-        className={`fixed top-0 w-[60%] sm:w-[40%] ${
+        className={`fixed top-0 w-[50%] sm:w-[40%] ${
           drawer ? "right-0" : "-right-full"
         } h-[100vh] bg-white absolute shadow-lg transition-all duration-300 ease-in-out z-30`}
       >
         <ul className="flex gap-y-5 flex-col ml-5 mt-10">
-          <Image
+          <IoMdClose
             onClick={toggleDrawer}
             id="close_drawer"
-            src="/images/close_menu.svg"
-            width={25}
-            height={25}
-            className="cursor-pointer hover:opacity-100 opacity-70  transition duration-75 ease-in hover:scale-125"
+            className="cursor-pointer hover:opacity-100 opacity-70 text-[20px] transition duration-75 ease-in hover:scale-125"
           />
           <Link onClick={toggleDrawer} href="/">
             <Li_drawer>Home</Li_drawer>
