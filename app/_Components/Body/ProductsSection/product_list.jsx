@@ -32,7 +32,7 @@ export default function Product_list({ product_data }) {
                 <Link href={productLink} key={productId} className="">
                   <div
                     id="card"
-                    className="cursor-pointer flex flex-col bg-gray-50 sm:w-full sm:mx-0 w-[70%] mx-auto h-full rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-150 ease-in"
+                    className="cursor-pointer flex flex-col bg-gray-50 sm:w-full sm:mx-0 w-[90%] mx-auto h-full rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-150 ease-in"
                   >
                     <div id="img_container" className="h-[40%] w-[100%] ">
                       <Image

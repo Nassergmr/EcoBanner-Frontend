@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import Li_drawer from "../../Elements/li_drawer";
 import { useState, useEffect, useRef } from "react";
@@ -9,8 +8,6 @@ import Button_secondary_drawer from "../../Elements/button_secondary_drawer";
 import { useUser } from "@clerk/nextjs";
 import { GrMenu } from "react-icons/gr";
 import { IoMdClose } from "react-icons/io";
-
-
 
 export default function Drawer() {
   const { user } = useUser();
