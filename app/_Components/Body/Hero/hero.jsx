@@ -47,7 +47,7 @@ export default function Hero() {
 
         <div id="undraw_container" className="sm:ml-auto mx-auto">
           <Image
-            src="/Images/undraw_online_ad_re_ol62.png"
+            src="/Images/undraw_online_ad_re_ol62.svg"
             className="md:min-w-[500px] "
             width={800}
             height={800}
