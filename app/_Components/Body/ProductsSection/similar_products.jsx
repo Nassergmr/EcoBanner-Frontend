@@ -29,7 +29,7 @@ export default function Similar_products({ filter }) {
                 <div id="img_container" className="h-[40%] w-[100%] ">
                   <Image
                     className="rounded-t-lg"
-                    src={item.attributes?.banner?.data[0]?.attributes?.url}
+                    src={item.attributes?.media?.data[0]?.attributes?.url}
                     width={150}
                     height={150}
                     layout="responsive"

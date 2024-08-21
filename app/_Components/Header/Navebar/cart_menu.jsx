@@ -1,7 +1,7 @@
 "use client";
 
 import { IoCloseOutline } from "react-icons/io5";
-import { useRef, useEffect, useContext } from "react";
+import { useRef, useEffect } from "react";
 import Cart_Products from "./cart_products";
 
 export default function Cart_Menu({ cart_Menu, setCart_Menu }) {
@@ -59,7 +59,7 @@ export default function Cart_Menu({ cart_Menu, setCart_Menu }) {
           <IoCloseOutline />
         </button>
 
-        <Cart_Products cart_Menu={cart_Menu} setCaart_Menu={setCart_Menu} />
+        <Cart_Products cart_Menu={cart_Menu} setCart_Menu={setCart_Menu} />
       </div>
     </>
   );

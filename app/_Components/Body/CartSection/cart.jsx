@@ -44,14 +44,13 @@ export default function Cart_Details() {
             <ul className="space-y-6">
               {cart.map((item) => {
                 const img_url =
-                  item?.product?.attributes?.banner?.data[0]?.attributes?.url;
+                  item?.product?.attributes?.media?.data[0]?.attributes?.url;
 
                 return (
                   <li
                     className="flex sm:flex-row flex-col  items-center gap-4"
                     key={item.id}
                   >
-                    {/* Added key prop */}
                     <div
                       id="img_container"
                       className=" sm:w-auto mx-auto sm:mx-0"

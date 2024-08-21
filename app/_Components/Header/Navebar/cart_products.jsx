@@ -2,17 +2,18 @@
 
 import Image from "next/image";
 import Cart_Context from "../../_Context/cart_context";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Link from "next/link";
 
 export default function Cart_Products({ setCart_Menu }) {
-  const [cart, setCart] = useContext(Cart_Context);
+  const [cart] = useContext(Cart_Context);
 
   return (
     <div id="cards_container " className="py-5 flex flex-col gap-y-8">
       {cart.map((item) => {
+        console.log(cart);
         const img_url =
-          item?.product?.attributes?.banner?.data[0]?.attributes?.url;
+          item?.product?.attributes?.media?.data[0]?.attributes?.url;
         return (
           <div key={item.id} className="mx-auto" id="card">
             <div id="img_container">

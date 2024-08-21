@@ -23,9 +23,9 @@ export default function Product_details({ product_data, filter }) {
     } else {
       const data = {
         data: {
-          user_name: user.fullName,
+          username: user.fullName,
           email: user.primaryEmailAddress.emailAddress,
-          products: [product_data?.id],
+          products_digitals: [product_data?.id],
         },
       };
 
@@ -49,11 +49,11 @@ export default function Product_details({ product_data, filter }) {
         id="product_container"
         className="sm:mx-0 mx-auto flex flex-wrap lg:flex-nowrap sm:mt-[50px] mt-[30px] justify-around  lg:px-16 md:px-8 sm:px-6 px-5  items-center gap-y-8"
       >
-        {product_data?.attributes?.banner?.data[0]?.attributes?.url ? (
+        {product_data?.attributes?.media?.data[0]?.attributes?.url ? (
           <div id="img_container" className="sm:mx-0 mx-auto">
             <Image
               className="rounded-lg shadow-lg"
-              src={product_data?.attributes?.banner?.data[0]?.attributes?.url}
+              src={product_data?.attributes?.media?.data[0]?.attributes?.url}
               width={450}
               height={450}
               alt="banner"

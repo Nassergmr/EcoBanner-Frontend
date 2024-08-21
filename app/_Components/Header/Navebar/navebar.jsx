@@ -33,12 +33,13 @@ export default function Navebar() {
 
   const getCartItems = () => {
     cartApi.UserItem(user.primaryEmailAddress.emailAddress).then((res) => {
+      console.log("cart data", res.data.data);
       res?.data?.data.forEach((cart_item) => {
         setCart((prev) => [
           ...prev,
           {
             id: cart_item.id,
-            product: cart_item.attributes.products.data[0],
+            product: cart_item?.attributes?.products_digitals?.data[0],
           },
         ]);
       });

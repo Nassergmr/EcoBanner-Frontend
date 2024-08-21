@@ -1,11 +1,11 @@
 import axiosClient from "./axiosClient";
 
-const getProductApi = () => axiosClient.get(`/digital-products?populate=*`);
+const getProductApi = () => axiosClient.get(`/products-digitals?populate=*`);
 const getProductId = (id) =>
-  axiosClient.get(`/digital-products/${id}?populate=*`);
+  axiosClient.get(`/products-digitals/${id}?populate=*`);
 const getProductFilter = (category) => {
   return axiosClient.get(
-    `/digital-products?filters[category][$eq]=${category}&populate=*`
+    `/products-digitals?filters[category][$eq]=${category}&populate=*`
   );
 };
 
@@ -14,4 +14,3 @@ export default {
   getProductId,
   getProductFilter,
 };
-1;

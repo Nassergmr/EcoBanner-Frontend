@@ -67,7 +67,7 @@ export default function Drawer() {
           <IoMdClose
             onClick={toggleDrawer}
             id="close_drawer"
-            className="cursor-pointer hover:opacity-100 opacity-70 text-[20px] transition duration-75 ease-in hover:scale-125"
+            className="cursor-pointer hover:opacity-100 opacity-70 text-[25px] transition duration-75 ease-in hover:scale-125"
           />
           <Link onClick={toggleDrawer} href="/">
             <Li_drawer>Home</Li_drawer>

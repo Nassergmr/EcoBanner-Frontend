@@ -13,7 +13,7 @@ export default function Product_list({ product_data }) {
       className="sm:mt-[200px] mt-[150px] mb-[100px] px-8 lg:px-16 md:px-8 sm:px-6"
     >
       <h2 className="text-xl border-b-[1.5px] w-fit border-purple-500 mb-5 text-pretty bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
-        Our Latest Products
+        Our Products
       </h2>
       <div
         id="cards_container"
@@ -37,7 +37,7 @@ export default function Product_list({ product_data }) {
                     <div id="img_container" className="h-[40%] w-[100%] ">
                       <Image
                         className="rounded-t-lg"
-                        src={item.attributes?.banner?.data[0]?.attributes?.url}
+                        src={item.attributes?.media?.data[0]?.attributes?.url}
                         width={300}
                         height={250}
                         layout="responsive"
