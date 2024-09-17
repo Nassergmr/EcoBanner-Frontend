@@ -44,7 +44,7 @@ export default function Cart_Details() {
             <ul className="space-y-6">
               {cart.map((item) => {
                 const img_url =
-                  item?.product?.attributes?.media?.data[0]?.attributes?.url;
+                  item?.product?.attributes?.img?.data?.attributes?.url;
 
                 return (
                   <li
@@ -121,7 +121,9 @@ export default function Cart_Details() {
                 <div className="flex justify-end">
                   <Link
                     href="/Pages/checkout"
-                    className="block rounded bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
+                    className={`${
+                      cart.length !== 0 ? "block" : "hidden"
+                    } rounded bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600`}
                   >
                     Checkout
                   </Link>

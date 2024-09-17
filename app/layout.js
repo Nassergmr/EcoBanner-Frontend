@@ -5,7 +5,7 @@ import "./globals.css";
 import Navebar from "./_Components/Header/Navebar/navebar";
 import { ClerkProvider } from "@clerk/nextjs";
 import Cart_Context from "./_Components/_Context/cart_context.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./_Components/Footer/footer.jsx";
 import { usePathname } from "next/navigation";
 
@@ -17,6 +17,10 @@ const inter = Roboto({ subsets: ["latin"], weight: "700" });
 // };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    document.title = "EcoBanner";
+  }, []);
+
   const [cart, setCart] = useState([]);
   const pathname = usePathname();
   const homePage = pathname.includes("Pages") || pathname.includes("auth");

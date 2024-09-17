@@ -11,9 +11,8 @@ export default function Cart_Products({ setCart_Menu }) {
   return (
     <div id="cards_container " className="py-5 flex flex-col gap-y-8">
       {cart.map((item) => {
-        console.log(cart);
-        const img_url =
-          item?.product?.attributes?.media?.data[0]?.attributes?.url;
+        console.log("cart", cart);
+        const img_url = item?.product?.attributes?.img?.data?.attributes?.url;
         return (
           <div key={item.id} className="mx-auto" id="card">
             <div id="img_container">

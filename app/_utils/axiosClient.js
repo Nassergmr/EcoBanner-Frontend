@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
 const apikey = process.env.NEXT_PUBLIC_REST_API_KEY;
-const apiurl = `https://digital-products-backend-2.onrender.com/api`;
+const apiurl = `http://localhost:1337/api`;
 
 const axiosClient = axios.create({
   baseURL: apiurl,

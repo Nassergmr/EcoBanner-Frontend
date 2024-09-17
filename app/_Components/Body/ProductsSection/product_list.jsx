@@ -4,7 +4,6 @@ import { BiCategory } from "react-icons/bi";
 import SkeletonCard from "../../Elements/skeleton_effect_products"; // Import the skeleton loader component
 
 export default function Product_list({ product_data }) {
-  // Define a boolean to check if data is still loading
   const isLoading = !product_data || product_data.length === 0;
 
   return (
@@ -20,24 +19,22 @@ export default function Product_list({ product_data }) {
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10"
       >
         {isLoading
-          ? // Render skeleton loaders if data is still loading
-            Array.from({ length: 8 }).map((_, index) => (
+          ? Array.from({ length: 8 }).map((_, index) => (
               <SkeletonCard key={index} />
             ))
-          : // Render product data once it has been fetched
-            product_data.map((item) => {
-              const productId = item.id; // Extract product ID from each item
-              const productLink = `/Pages/product_details/${productId}`; // Construct product link
+          : product_data.map((item) => {
+              const productId = item.id;
+              const productLink = `/Pages/product_details/${productId}`;
               return (
                 <Link href={productLink} key={productId} className="">
                   <div
                     id="card"
-                    className="cursor-pointer flex flex-col bg-gray-50 sm:w-full sm:mx-0 w-[90%] mx-auto h-full rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-150 ease-in"
+                    className="cursor-pointer flex flex-col bg-gray-50 w-full sm:mx-0 mx-auto h-full rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-150 ease-in"
                   >
                     <div id="img_container" className="h-[40%] w-[100%] ">
                       <Image
                         className="rounded-t-lg"
-                        src={item.attributes?.media?.data[0]?.attributes?.url}
+                        src={item.attributes?.img?.data?.attributes?.url}
                         width={300}
                         height={250}
                         layout="responsive"

@@ -18,8 +18,9 @@ import cartApi from "../../../_utils/cartApi";
 export default function Navebar() {
   const [cart_Menu, setCart_Menu] = useState(false);
 
-  const handleCart_Menu = () => {
-    setCart_Menu(!cart_Menu);
+  const handleCart_Menu = (e) => {
+    e.preventDefault();
+    window.location.href = "/Pages/cart"; // This forces both navigation and refresh
   };
 
   const { user } = useUser();
@@ -54,7 +55,12 @@ export default function Navebar() {
     <nav className="flex justify-between lg:px-16 md:px-8 sm:px-6 px-5 py-5 items-center bg-white shadow-md fixed w-full max-w-[100vw] top-0">
       <ul className="flex sm:gap-x-5 items-center">
         <Link href="/" id="logo" className="mr-5">
-          <Image src="/logo.svg" width={70} height={70} alt="logo" />
+          <Image
+            src="/Images/banner-logo-png-transparent.png"
+            width={100}
+            height={100}
+            alt="logo"
+          />
         </Link>
         <Link href="/">
           <Li_nave>Home</Li_nave>
@@ -78,12 +84,13 @@ export default function Navebar() {
         </div>
       ) : (
         <div id="cart_icon" className="flex items-center gap-4">
-          <h2
+          <Link
+            href="/Pages/cart"
             onClick={handleCart_Menu}
             className="flex gap-1 cursor-pointer text-gray-500 hover:text-black transition duration-75 ease-in"
           >
             <FiShoppingCart className="text-[25px] " />({cart?.length})
-          </h2>
+          </Link>
 
           <UserButton></UserButton>
           <Cart_Menu cart_Menu={cart_Menu} setCart_Menu={setCart_Menu} />

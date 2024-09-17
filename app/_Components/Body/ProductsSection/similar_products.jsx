@@ -14,7 +14,7 @@ export default function Similar_products({ filter }) {
 
       <div
         id="similars_container"
-        className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-y-10"
+        className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-y-10 gap-x-6"
       >
         {filter.map((item) => {
           const productId = item.id;
@@ -24,12 +24,12 @@ export default function Similar_products({ filter }) {
             <Link href={productLink} key={productId} className="">
               <div
                 id="card"
-                className="cursor-pointer mx-auto flex flex-col bg-gray-50 sm:w-[90%] w-[70%] h-full rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-150 ease-in"
+                className="cursor-pointer mx-auto flex flex-col bg-gray-50 w-full h-full rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-150 ease-in"
               >
                 <div id="img_container" className="h-[40%] w-[100%] ">
                   <Image
                     className="rounded-t-lg"
-                    src={item.attributes?.media?.data[0]?.attributes?.url}
+                    src={item.attributes?.img?.data?.attributes?.url}
                     width={150}
                     height={150}
                     layout="responsive"

@@ -13,13 +13,13 @@ export default function Hero() {
           className="text-center lg:text-left w-full lg:w-[60%]"
         >
           <h1 className="mb-4 sm:text-4xl text-2xl text-pretty bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
-            The Freedom to Design the Digital Products{" "}
-            <span className="text-gray-400">You Envision</span>
+            Transform Your Brand with Stunning Banners{" "}
+            <span className="text-gray-400">That Captivate and Convert</span>
           </h1>
-          <p>
-            A professional website enhances your digital presence. Design a
-            stunning website to captivate and engage your audience, showcasing
-            your digital products and growing your online business.
+          <p className="text-gray-500 text-base">
+            Elevate your online presence with custom-designed banners. Our
+            eye-catching, high-impact banners are crafted to engage your
+            audience and drive conversions.
           </p>
 
           <div id="button_container" className="flex gap-3 justify-center mt-8">
