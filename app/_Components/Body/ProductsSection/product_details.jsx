@@ -21,23 +21,32 @@ export default function Product_details({ product_data, filter }) {
     if (!user) {
       router.push("/auth/sign-in");
     } else {
-      const data = {
-        data: {
-          username: user.fullName,
-          email: user.primaryEmailAddress.emailAddress,
-          products_digitals: [product_data?.id],
-        },
-      };
+      // Check if the item is already in the cart
+      const isPresent = cart.some(
+        (cartItem) => cartItem.product_data.id === product_data?.id
+      );
 
-      cartApi.AddtoCart(data).then((res) => {
-        setCart([
-          ...cart,
-          {
-            id: res?.data?.data?.id,
-            product_data,
+      if (!isPresent) {
+        const data = {
+          data: {
+            username: user.fullName,
+            email: user.primaryEmailAddress.emailAddress,
+            products_digitals: [product_data?.id],
           },
-        ]);
-      });
+        };
+
+        cartApi.AddtoCart(data).then((res) => {
+          setCart([
+            ...cart,
+            {
+              id: res?.data?.data?.id,
+              product_data,
+            },
+          ]);
+        });
+      } else {
+        alert("Item already in the cart");
+      }
     }
   };
 
